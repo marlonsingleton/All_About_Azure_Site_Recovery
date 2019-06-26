@@ -8,7 +8,7 @@ REM ==== Clean up the folders ========================
 RMDIR /S /q %temp%\MobSvc
 MKDIR %Temp%\MobSvc
 MKDIR C:\Temp
-REM (Breakdown) Remove data from "AppData\Local|Temp" | Make pristine MobSvc directory | MKDIR C:\Temp already exists from line 4 and can be removed
+REM (Breakdown) Remove data from "AppData\Local\Temp" - Make pristine MobSvc directory - MKDIR C:\Temp already exists from line 4 and can be removed
 REM ==================================================
 
 REM ==== Copy new files ==============================
