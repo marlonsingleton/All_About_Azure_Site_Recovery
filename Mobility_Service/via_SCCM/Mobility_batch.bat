@@ -1,18 +1,21 @@
 REM Code from Microsoft
-REM Breakdown by Marlon Singleton
+REM Breakdown and/or modifications by Marlon Singleton
 
 Time /t >> C:\Temp\logfile.log
+REM (Breakdown) Just output time and append to logfile.log 
 REM ==================================================
 REM ==== Clean up the folders ========================
 RMDIR /S /q %temp%\MobSvc
 MKDIR %Temp%\MobSvc
 MKDIR C:\Temp
+REM (Breakdown) Remove data from "AppData\Local|Temp" | Make pristine MobSvc directory | MKDIR C:\Temp already exists from line 4 and can be removed
 REM ==================================================
 
 REM ==== Copy new files ==============================
 COPY M*.* %Temp%\MobSvc
 CD %Temp%\MobSvc
 REN Micro*.exe MobSvcInstaller.exe
+REM (Breakdown) From current directory, copy files starting with "M" to MobSvc and then rename them to MobSvcInstaller.exe
 REM ==================================================
 
 REM ==== Extract the installer =======================
