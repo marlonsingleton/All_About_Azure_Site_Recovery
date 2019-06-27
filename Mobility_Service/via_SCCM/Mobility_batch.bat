@@ -20,6 +20,7 @@ REM ==================================================
 
 REM ==== Extract the installer =======================
 MobSvcInstaller.exe /q /x:%Temp%\MobSvc\Extracted
+REM (Breakdown) Extract intaller files to Extracted folder
 REM ==== Wait 10s for extraction to complete =========
 TIMEOUT /t 10
 REM =================================================
